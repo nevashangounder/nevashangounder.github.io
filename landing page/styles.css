@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+:root{
+    --primaryColor: white;
+    --bcgColor: rgba(50 ,50,50,0.7);
+    --bcgColor2: rgba(50 ,50,50,0.7);
+    --mainWhite: rgba(245,245,245,0.5);
+    --mainRed: rgba(196,5,5, 1);
+    --letterSpacing: 0.15rem;
+    --mainTransition: all 0.3s linear;
+    --mainBlue: rgba(65, 65, 119, 0.9);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bcgColor);
+    color: var(--mainWhite);
+    font-family: "Kanit",sans-serif;
+}
+
+a{
+    color: var(--primaryColor);
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+/*-------------navbar--------------------*/
+.navbar{
+    top: 0;
+    position: sticky;
+    background: var(--mainRed);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.navbar-center{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1.5rem;
+}
+
+
+/*-------------end of navbar-------------*/
+
+/*-----------about section-----------------------*/
+.about{
+    min-height: calc(100vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.banner{
+    color: var(--mainWhite);
+    padding: 2rem 2rem;
+}
+
+.banner-title{
+    font-size: 3.5rem;
+}
+
+.banner-subtitle{
+    font-size: 1.8rem;
+    color: var(--mainRed);
+    font-style: italic;
+}
+
+/*-----------end of about section-----------------------*/
+
+/*-----------work section-----------------------*/
+.work{
+    min-height: calc(100vh);
+    background-color: red;
+    padding-top: 2.5rem;
+    margin-top: 2.5rem;
+    color: var(--mainWhite);
+    background-color: var(--mainBlue);
+    display: flex;
+    justify-content: center;
+}
+.work-title{
+    text-align: center;
+    font-size: 1.65rem;
+    padding-top: 3rem;
+    
+  
+    
+}
+
+/*-----------end of work section-----------------------*/
+
+/*-------------------contact and footer section-------*/
+.contact{
+    min-height: calc(100vh - 60px);
+    text-align: center;
+    color: var(--mainWhite);
+    letter-spacing: var(--letterSpacing);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.contact-title{
+    font-size: 3.5rem;
+
+    
+}
+
+.contact-subtitle{
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.footer-info{
+    height: 100px;
+}
+
+
+
+
+/*-------------------end of contact and footer section-------*/
